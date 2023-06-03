@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/MA.dir/main.cpp.o include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o  -o MA  -Wl,-rpath,/usr/local/lib /usr/local/lib/libfmt.so.8.1.1 -Wl,--as-needed 

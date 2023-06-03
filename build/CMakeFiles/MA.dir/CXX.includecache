@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yiming/training/c++_further_no_cost/main.cpp
+eigen3/Eigen/Eigen
+-
+fmt/color.h
+-
+iostream
+-
+
