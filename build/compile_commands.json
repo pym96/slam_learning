@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/yiming/training/slam_learn/build",
+  "command": "/usr/bin/c++   -I/usr/include/eigen3 -I/home/yiming/training/slam_learn/auto_aim   -g  -pthread -Wl,--no-as-needed   -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++11 -o CMakeFiles/PRAC.dir/eigen_practice.cpp.o -c /home/yiming/training/slam_learn/eigen_practice.cpp",
+  "file": "/home/yiming/training/slam_learn/eigen_practice.cpp"
+},
+{
+  "directory": "/home/yiming/training/slam_learn/build",
+  "command": "/usr/bin/c++  -DFMT_LOCALE -DFMT_SHARED -I/usr/include/eigen3 -I/home/yiming/training/slam_learn/auto_aim   -g  -pthread -Wl,--no-as-needed   -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++11 -o CMakeFiles/MA.dir/run_and_compile.cpp.o -c /home/yiming/training/slam_learn/run_and_compile.cpp",
+  "file": "/home/yiming/training/slam_learn/run_and_compile.cpp"
+},
+{
+  "directory": "/home/yiming/training/slam_learn/build/include",
+  "command": "/usr/bin/c++   -I/usr/include/eigen3 -I/home/yiming/training/slam_learn/auto_aim   -g  -pthread -Wl,--no-as-needed   -Wall -Werror -Wall -Werror=return-type -Wno-unused-variable -std=gnu++11 -o CMakeFiles/auto_aim.dir/auto_aim.cpp.o -c /home/yiming/training/slam_learn/include/auto_aim.cpp",
+  "file": "/home/yiming/training/slam_learn/include/auto_aim.cpp"
+}
+]

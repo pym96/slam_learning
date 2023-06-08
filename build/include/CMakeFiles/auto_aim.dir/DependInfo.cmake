@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yiming/training/c++_further_no_cost/include/auto_aim.cpp" "/home/yiming/training/c++_further_no_cost/build/include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o"
+  "/home/yiming/training/slam_learn/include/auto_aim.cpp" "/home/yiming/training/slam_learn/build/include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

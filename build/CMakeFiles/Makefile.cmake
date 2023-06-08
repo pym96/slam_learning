@@ -54,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/PRAC.dir/DependInfo.cmake"
   "CMakeFiles/MA.dir/DependInfo.cmake"
   "include/CMakeFiles/auto_aim.dir/DependInfo.cmake"
   )

@@ -44,15 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiming/training/c++_further_no_cost
+CMAKE_SOURCE_DIR = /home/yiming/training/slam_learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiming/training/c++_further_no_cost/build
+CMAKE_BINARY_DIR = /home/yiming/training/slam_learn/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/PRAC.dir/all
 all: CMakeFiles/MA.dir/all
 all: include/all
 
@@ -64,6 +65,7 @@ preinstall: include/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/PRAC.dir/clean
 clean: CMakeFiles/MA.dir/clean
 clean: include/clean
 
@@ -88,20 +90,47 @@ include/clean: include/CMakeFiles/auto_aim.dir/clean
 .PHONY : include/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/PRAC.dir
+
+# All Build rule for target.
+CMakeFiles/PRAC.dir/all:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/depend
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yiming/training/slam_learn/build/CMakeFiles --progress-num=3,4 "Built target PRAC"
+.PHONY : CMakeFiles/PRAC.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/PRAC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PRAC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 0
+.PHONY : CMakeFiles/PRAC.dir/rule
+
+# Convenience name for target.
+PRAC: CMakeFiles/PRAC.dir/rule
+
+.PHONY : PRAC
+
+# clean rule for target.
+CMakeFiles/PRAC.dir/clean:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/clean
+.PHONY : CMakeFiles/PRAC.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/MA.dir
 
 # All Build rule for target.
 CMakeFiles/MA.dir/all: include/CMakeFiles/auto_aim.dir/all
 	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/depend
 	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yiming/training/c++_further_no_cost/build/CMakeFiles --progress-num=1,2 "Built target MA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yiming/training/slam_learn/build/CMakeFiles --progress-num=1,2 "Built target MA"
 .PHONY : CMakeFiles/MA.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MA.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 0
 .PHONY : CMakeFiles/MA.dir/rule
 
 # Convenience name for target.
@@ -121,14 +150,14 @@ CMakeFiles/MA.dir/clean:
 include/CMakeFiles/auto_aim.dir/all:
 	$(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/depend
 	$(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yiming/training/c++_further_no_cost/build/CMakeFiles --progress-num=3 "Built target auto_aim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yiming/training/slam_learn/build/CMakeFiles --progress-num=5 "Built target auto_aim"
 .PHONY : include/CMakeFiles/auto_aim.dir/all
 
 # Build rule for subdir invocation for target.
 include/CMakeFiles/auto_aim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/auto_aim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 0
 .PHONY : include/CMakeFiles/auto_aim.dir/rule
 
 # Convenience name for target.

@@ -1,0 +1,1 @@
+/usr/bin/c++   -g  -pthread -Wl,--no-as-needed  -rdynamic CMakeFiles/PRAC.dir/eigen_practice.cpp.o  -o PRAC 

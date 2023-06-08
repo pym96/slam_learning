@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiming/training/c++_further_no_cost
+CMAKE_SOURCE_DIR = /home/yiming/training/slam_learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiming/training/c++_further_no_cost/build
+CMAKE_BINARY_DIR = /home/yiming/training/slam_learn/build
 
 # Include any dependencies generated for this target.
 include include/CMakeFiles/auto_aim.dir/depend.make
@@ -59,16 +59,16 @@ include include/CMakeFiles/auto_aim.dir/flags.make
 
 include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o: include/CMakeFiles/auto_aim.dir/flags.make
 include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o: ../include/auto_aim.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yiming/training/c++_further_no_cost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o"
-	cd /home/yiming/training/c++_further_no_cost/build/include && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_aim.dir/auto_aim.cpp.o -c /home/yiming/training/c++_further_no_cost/include/auto_aim.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yiming/training/slam_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o"
+	cd /home/yiming/training/slam_learn/build/include && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_aim.dir/auto_aim.cpp.o -c /home/yiming/training/slam_learn/include/auto_aim.cpp
 
 include/CMakeFiles/auto_aim.dir/auto_aim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_aim.dir/auto_aim.cpp.i"
-	cd /home/yiming/training/c++_further_no_cost/build/include && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yiming/training/c++_further_no_cost/include/auto_aim.cpp > CMakeFiles/auto_aim.dir/auto_aim.cpp.i
+	cd /home/yiming/training/slam_learn/build/include && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yiming/training/slam_learn/include/auto_aim.cpp > CMakeFiles/auto_aim.dir/auto_aim.cpp.i
 
 include/CMakeFiles/auto_aim.dir/auto_aim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_aim.dir/auto_aim.cpp.s"
-	cd /home/yiming/training/c++_further_no_cost/build/include && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yiming/training/c++_further_no_cost/include/auto_aim.cpp -o CMakeFiles/auto_aim.dir/auto_aim.cpp.s
+	cd /home/yiming/training/slam_learn/build/include && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yiming/training/slam_learn/include/auto_aim.cpp -o CMakeFiles/auto_aim.dir/auto_aim.cpp.s
 
 auto_aim: include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o
 auto_aim: include/CMakeFiles/auto_aim.dir/build.make
@@ -81,10 +81,10 @@ include/CMakeFiles/auto_aim.dir/build: auto_aim
 .PHONY : include/CMakeFiles/auto_aim.dir/build
 
 include/CMakeFiles/auto_aim.dir/clean:
-	cd /home/yiming/training/c++_further_no_cost/build/include && $(CMAKE_COMMAND) -P CMakeFiles/auto_aim.dir/cmake_clean.cmake
+	cd /home/yiming/training/slam_learn/build/include && $(CMAKE_COMMAND) -P CMakeFiles/auto_aim.dir/cmake_clean.cmake
 .PHONY : include/CMakeFiles/auto_aim.dir/clean
 
 include/CMakeFiles/auto_aim.dir/depend:
-	cd /home/yiming/training/c++_further_no_cost/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiming/training/c++_further_no_cost /home/yiming/training/c++_further_no_cost/include /home/yiming/training/c++_further_no_cost/build /home/yiming/training/c++_further_no_cost/build/include /home/yiming/training/c++_further_no_cost/build/include/CMakeFiles/auto_aim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yiming/training/slam_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yiming/training/slam_learn /home/yiming/training/slam_learn/include /home/yiming/training/slam_learn/build /home/yiming/training/slam_learn/build/include /home/yiming/training/slam_learn/build/include/CMakeFiles/auto_aim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : include/CMakeFiles/auto_aim.dir/depend
 

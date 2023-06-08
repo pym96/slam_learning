@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiming/training/c++_further_no_cost
+CMAKE_SOURCE_DIR = /home/yiming/training/slam_learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiming/training/c++_further_no_cost/build
+CMAKE_BINARY_DIR = /home/yiming/training/slam_learn/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles /home/yiming/training/c++_further_no_cost/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles /home/yiming/training/slam_learn/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named PRAC
+
+# Build rule for target.
+PRAC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PRAC
+.PHONY : PRAC
+
+# fast build rule for target.
+PRAC/fast:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/build
+.PHONY : PRAC/fast
+
+#=============================================================================
 # Target rules for targets named MA
 
 # Build rule for target.
@@ -136,32 +149,59 @@ auto_aim/fast:
 	$(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/build
 .PHONY : auto_aim/fast
 
-main.o: main.cpp.o
+eigen_practice.o: eigen_practice.cpp.o
 
-.PHONY : main.o
+.PHONY : eigen_practice.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/main.cpp.o
-.PHONY : main.cpp.o
+eigen_practice.cpp.o:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/eigen_practice.cpp.o
+.PHONY : eigen_practice.cpp.o
 
-main.i: main.cpp.i
+eigen_practice.i: eigen_practice.cpp.i
 
-.PHONY : main.i
+.PHONY : eigen_practice.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/main.cpp.i
-.PHONY : main.cpp.i
+eigen_practice.cpp.i:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/eigen_practice.cpp.i
+.PHONY : eigen_practice.cpp.i
 
-main.s: main.cpp.s
+eigen_practice.s: eigen_practice.cpp.s
 
-.PHONY : main.s
+.PHONY : eigen_practice.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/main.cpp.s
-.PHONY : main.cpp.s
+eigen_practice.cpp.s:
+	$(MAKE) -f CMakeFiles/PRAC.dir/build.make CMakeFiles/PRAC.dir/eigen_practice.cpp.s
+.PHONY : eigen_practice.cpp.s
+
+run_and_compile.o: run_and_compile.cpp.o
+
+.PHONY : run_and_compile.o
+
+# target to build an object file
+run_and_compile.cpp.o:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/run_and_compile.cpp.o
+.PHONY : run_and_compile.cpp.o
+
+run_and_compile.i: run_and_compile.cpp.i
+
+.PHONY : run_and_compile.i
+
+# target to preprocess a source file
+run_and_compile.cpp.i:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/run_and_compile.cpp.i
+.PHONY : run_and_compile.cpp.i
+
+run_and_compile.s: run_and_compile.cpp.s
+
+.PHONY : run_and_compile.s
+
+# target to generate assembly for a file
+run_and_compile.cpp.s:
+	$(MAKE) -f CMakeFiles/MA.dir/build.make CMakeFiles/MA.dir/run_and_compile.cpp.s
+.PHONY : run_and_compile.cpp.s
 
 # Help Target
 help:
@@ -171,11 +211,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... PRAC"
 	@echo "... MA"
 	@echo "... auto_aim"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... eigen_practice.o"
+	@echo "... eigen_practice.i"
+	@echo "... eigen_practice.s"
+	@echo "... run_and_compile.o"
+	@echo "... run_and_compile.i"
+	@echo "... run_and_compile.s"
 .PHONY : help
 
 

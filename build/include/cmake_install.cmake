@@ -1,4 +1,4 @@
-# Install script for directory: /home/yiming/training/c++_further_no_cost/include
+# Install script for directory: /home/yiming/training/slam_learn/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

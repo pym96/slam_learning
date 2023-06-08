@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yiming/training/c++_further_no_cost/main.cpp" "/home/yiming/training/c++_further_no_cost/build/CMakeFiles/MA.dir/main.cpp.o"
+  "/home/yiming/training/slam_learn/run_and_compile.cpp" "/home/yiming/training/slam_learn/build/CMakeFiles/MA.dir/run_and_compile.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

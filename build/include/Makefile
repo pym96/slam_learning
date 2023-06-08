@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yiming/training/c++_further_no_cost
+CMAKE_SOURCE_DIR = /home/yiming/training/slam_learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yiming/training/c++_further_no_cost/build
+CMAKE_BINARY_DIR = /home/yiming/training/slam_learn/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yiming/training/c++_further_no_cost/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles /home/yiming/training/c++_further_no_cost/build/include/CMakeFiles/progress.marks
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f CMakeFiles/Makefile2 include/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/c++_further_no_cost/build/CMakeFiles 0
+	cd /home/yiming/training/slam_learn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles /home/yiming/training/slam_learn/build/include/CMakeFiles/progress.marks
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f CMakeFiles/Makefile2 include/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yiming/training/slam_learn/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f CMakeFiles/Makefile2 include/clean
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f CMakeFiles/Makefile2 include/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yiming/training/c++_further_no_cost/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yiming/training/slam_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 include/CMakeFiles/auto_aim.dir/rule:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/auto_aim.dir/rule
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/auto_aim.dir/rule
 .PHONY : include/CMakeFiles/auto_aim.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ auto_aim: include/CMakeFiles/auto_aim.dir/rule
 
 # fast build rule for target.
 auto_aim/fast:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/build
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/build
 .PHONY : auto_aim/fast
 
 auto_aim.o: auto_aim.cpp.o
@@ -131,7 +131,7 @@ auto_aim.o: auto_aim.cpp.o
 
 # target to build an object file
 auto_aim.cpp.o:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.o
 .PHONY : auto_aim.cpp.o
 
 auto_aim.i: auto_aim.cpp.i
@@ -140,7 +140,7 @@ auto_aim.i: auto_aim.cpp.i
 
 # target to preprocess a source file
 auto_aim.cpp.i:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.i
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.i
 .PHONY : auto_aim.cpp.i
 
 auto_aim.s: auto_aim.cpp.s
@@ -149,7 +149,7 @@ auto_aim.s: auto_aim.cpp.s
 
 # target to generate assembly for a file
 auto_aim.cpp.s:
-	cd /home/yiming/training/c++_further_no_cost/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.s
+	cd /home/yiming/training/slam_learn/build && $(MAKE) -f include/CMakeFiles/auto_aim.dir/build.make include/CMakeFiles/auto_aim.dir/auto_aim.cpp.s
 .PHONY : auto_aim.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yiming/training/c++_further_no_cost/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yiming/training/slam_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
